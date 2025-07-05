@@ -1,9 +1,9 @@
 :root{
-    --laranja: #DA722C;
-    --azul-escuro: #023047;
-    --preto :#070917;
-    --branco : #E8F7FB;
-    --azul-clara: #6F7DFB;
+    --laranja-cor: #DA722C;
+    --azul-escuro-cor: #023047;
+    --preto-cor :#070917;
+    --branco-cor : #E8F7FB;
+    --azul-claro-cor: #6F7DFB;
 }
 *,
 *::after,
@@ -13,7 +13,7 @@
 
 body {
     margin: 0;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -28,7 +28,7 @@ body {
     color: #fff;
     display: inline-block;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     position: relative;
 }
@@ -67,6 +67,11 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 36px;
+    z-index: 100;
 }
 
 nav .logo {
@@ -81,6 +86,7 @@ nav .logo {
     align-items: center;
     gap: 60px;
     list-style: none;
+    margin: 0 ;
     
  }
 
@@ -89,5 +95,181 @@ nav .logo {
     font-weight: bold;
     font-size: 16px;
     color: #ffffff;
+    text-decoration: none;
     
  }
+
+ .hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:60px ;
+
+ }
+
+ .hero-section .left h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    color: #ffffff;
+    margin-bottom: 0;
+ }
+
+ .hero-section .left p {
+    font-family: "poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 457px;
+ }
+
+
+ .hero-sction .left {
+  flex: 1;  
+ }
+
+
+ .hero-sction .right {
+    align-self: flex-end;
+ }
+
+
+ .hero-sction .right img {
+    height: 520px;
+    vertical-align: middle;
+
+ }
+
+
+ .achievement-card {
+ position: absolute;
+ min-width: 200px ;
+ } 
+
+  .achievement-card .content {
+    border-radius: 24px;
+    background:  #fff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+
+  }
+
+ .achievement-card.students-enrolled {
+    left: 47%;
+    top: 270px;
+ }
+
+ .achievement-card.overall-rating {
+    left: 47%;
+    top: 470px;
+  
+
+ }
+
+ .achievement-card .content div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+ }
+
+
+  .achievement-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--azul-escuro-cor);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+
+   .achievement-card p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--azul-escuro-cor);
+    margin-top: -8px;
+    margin-bottom: 8px;
+
+   }
+
+   .achievement-card .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+   }
+
+
+
+   section {
+    margin-top: 100px;
+
+   }
+
+   h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--azul-escuro-cor);
+   }
+
+   h2.light {
+    color: #fff;
+   }
+
+   section p {
+    font-family: "Poppins";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--azul-escuro-cor);
+    margin: 12px;
+   }
+
+
+   .testimonials-section {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+   }
+
+
+   .testimonials-section .mobile-btn {
+    display: none;
+   }
+
+   .testimonials-section .testimonials-card {
+    width: 422px;
+    background: #ffffff;
+    box-shadow: 0px 9px 36px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    margin-bottom: 50px;
+   }
+
+
+
+   .testimonials-section .testimonial-card .content {
+    font-family: "Releway",sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 24px 32px;
+    background:var(--azul-claro-cor) ;
+   }
